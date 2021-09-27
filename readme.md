@@ -9,5 +9,8 @@
 3. Installation gulp to the project folder, the command:
    <code>$ npm install gulp --save-dev</code>
 
+4. Installation npm, the command: 
+   <code>$ npm install</code>
+
 4. To start the project build (the browser opens automatically), the command
    <code>$ npm run dev</code>
