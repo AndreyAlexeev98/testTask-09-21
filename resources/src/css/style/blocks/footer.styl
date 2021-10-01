@@ -1,0 +1,169 @@
+@import "../layout/variables.styl"
+
+.footer
+  border-top: 1px solid $borderGrey;
+  position: relative;
+  padding: 20px 0; 
+
+.click-to-top
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 57px;
+  transform: translateY(-79%) rotate(90deg);
+  background-color: $borderGrey;
+  cursor: pointer;
+
+.footer__container
+  display: flex;
+
+.footer__container > div:not(:last-child)
+  margin-right: 40px;
+
+.footer__info
+  flex: 2.5;
+
+.footer__desc
+  margin-bottom: 16px;
+  font-weight: 400;
+
+.footer__title
+  margin-bottom: 10px;
+  white-space: nowrap;
+  font-weight: bold;
+  color: $grey;
+
+.footer__links
+  flex: 1;
+
+.footer__link
+  font-weight: 400;
+  color: $lightGrey;
+
+
+.footer__link:not(:last-child)
+  margin-bottom: 10px 
+
+.footer a 
+  display: block;
+
+.footer__link#privacyPolicy
+  position: relative;
+
+.popup
+  position: absolute;
+  width: 500px;
+  height: 411px;
+  top: -10px;
+  right: -63%;
+  transform: translateY(-107%);
+
+.popup::before {
+   content: "";
+    width: 17px;
+    height: 17px;
+    border-radius: 3px;
+    -ms-transform: rotate(45deg);
+    transform: rotate(
+45deg);
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    bottom: -32px;
+    border-bottom: 2px solid #e1e8f0;
+    border-right: 2px solid #e1e8f0;
+    right: 50%;
+    border-radius: 17px 1px 0 0;
+}
+
+
+.no-visible
+  top: -9999px;
+
+.popup__header
+  background-color: $blue;
+  border-color: @background-color;
+  padding: 20px 30px;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+
+.popup__titile
+  color: $white;
+  font-size: 32px;
+
+.popup__close
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+.popup__close::after, .popup__close::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0.125rem;
+    height: 1.125rem;
+    background-color: $white;
+    border-radius: 35% 35% 35% 35%;
+}
+
+.popup__close::before {
+    left: 10px;
+    transform: rotate(-45deg);
+}
+
+.popup__close::after {
+    right: -2px;
+    transform: rotate(45deg);
+}
+
+.popop__body
+  border-left: 2px solid $borderGrey;
+  border-right: 2px solid $borderGrey;
+  border-bottom: 2px solid $borderGrey;
+  border-radius: 0 0 5px 5px;
+  overflow-y: scroll;
+  max-height: 85%;
+  background-color: $white; 
+  font-weight: 400;
+  color: $greyOp;
+  padding: 15px 25px;
+
+.footer__contacts
+  flex: 1;
+
+.footer__btn
+  border: 1px solid $borderGrey;
+  padding: 5px 31px;
+  margin: 0 7px;
+  cursor: pointer;
+  white-space: nowrap
+
+.footer__follow
+  flex: 1;
+
+.follow__list
+  display: flex;
+
+.follow__item
+  border-radius: 50%;
+  border: 1px solid $borderGrey;
+  width: 38px;
+  height: 38px;
+  position: relative;
+
+.follow__item:not(:last-child)
+  margin-right: 10px;
+
+.follow__links
+  display: block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);

@@ -1,0 +1,76 @@
+@import "../layout/variables.styl"
+
+.main
+    margin-bottom: 134px;
+
+
+.main__content
+    margin-bottom: 100px;
+
+.main__title
+    font-weight: 600;
+    font-size: 42px;
+    color: $grey;
+
+.main__subtitle
+    font-size: 24px;
+    color: $grey;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+.container-text
+    max-width: 780px;
+    margin: 0 auto;
+
+.container-text *::selection
+    background: $blue;
+    color: $containerText;
+
+.main__text
+    font-weight: 400;
+    color: $greyOp;
+
+.main__text ul li
+    list-style: unset;
+    margin-left: 17px;
+
+.main__text a
+    color: $blue;
+    display: block;
+
+.subtitle__small
+    font-size: 18px;
+    color: $grey;
+    font-weight: 600;
+
+.table
+    width: 100%;
+    text-align: center;
+    line-height: 1.8;
+    margin-top: 10px;
+
+.table th
+    font-size: 18px;
+    color: $grey;
+
+.table td
+    font-weight: 400;
+    color: $grey;
+
+
+tr
+    display: flex;
+    padding: 20px 40px 20px 15px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+table thead tr
+    border-bottom: 2px solid $borderGrey;
+    padding: 0 40px 7px 15px;
+
+table tbody tr:not(:last-child)
+    border-bottom: 1px solid $borderGrey;
+
+table tbody tr:last-child
+    padding-bottom: 0
+    

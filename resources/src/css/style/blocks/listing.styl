@@ -1,0 +1,57 @@
+@import "../layout/variables.styl"
+
+.listing
+    margin-bottom: 40px;
+
+.listing__title-name
+.listing__title-value
+    font-size: 22px;
+
+.listing__title-card
+.listing__subtitle-card
+    color: $grey;
+
+.listing__subtitle-card
+.listing__text-card
+    font-weight: 400;
+    font-size: 14px;
+
+
+.listing__header
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+.arrow__left--listing,.arrow__right--listing
+    width: 29px;
+    height: 83px;
+    display: inline-block;
+    cursor: pointer;
+
+.arrow__right--listing
+    transform: rotate(180deg);
+
+.listing__list
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+.listing__pic
+    position: relative
+    height: 157px;
+    width: 280px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+
+.listing__time
+    position: absolute;
+    right: 2%;
+    bottom: 6%
+    font-size: 12px;
+    background-color: rgba(0,0,0,0.55);
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 5px;
+

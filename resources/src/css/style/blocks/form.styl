@@ -1,0 +1,92 @@
+@import "../layout/variables.styl"
+
+.form
+  flex: 2;
+  margin-right: 10px;
+  border-top: 1px solid #e1e8f0;
+  padding-top: 25px;
+
+.form > div:not(:last-child)
+  margin-bottom: 20px;
+
+.span-red
+  color: red
+
+.form__subtitle 
+  margin-bottom: 10px
+
+.form__subtitle 
+.form__info
+  font-weight: 400;
+  color: $grey;  
+
+.form__textarea
+  padding: 8px 5px;
+  width: 100%;
+  resize: vertical;
+  height: 30vh;
+  min-height: 100px;
+
+.form__inputs-col
+  display: flex
+
+.form__inpust-row:first-child
+    margin-right: 6%;
+
+.form__inpust-row
+    flex: 1;
+
+.form__input-name
+  width: 100%;
+  padding: 8px 5px;
+
+.form__check 
+  margin: 0 1.25rem 0 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+
+.form__checkbox
+    display: none;
+
+.check__visible 
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.625rem;
+  background-color: $blue;
+  position: relative;
+
+.form__checkbox-info
+  font-weight: 400;
+  font-size: 14px;
+  color: $grey;
+  display: inline-block;
+
+
+
+.form__checkbox:checked ~ .check__visible::before, .form__checkbox:checked ~ .check__visible::after
+  content: '';
+  position: absolute;
+  width: 0.1875rem;
+  background-color: $white;
+
+.check__visible::before
+  top: 10px;
+  left: 5px;
+  height: 8px;
+  transform: rotate(-45deg);
+
+.check__visible::after
+  top: 4px;
+  left: 13px;
+  height: 16px;
+  transform: rotate(45deg);
+
+
+.form__submit
+  padding: 10px 60px;
+  border-radius: 5px;
+  background-color: rgba(131, 146, 166, 0.3);;
+  color: $white;

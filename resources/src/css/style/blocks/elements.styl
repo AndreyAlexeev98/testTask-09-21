@@ -1,0 +1,51 @@
+@import "../layout/variables.styl"
+
+.elements__controllers
+  display: flex;
+  align-items: center;
+
+.elements__controllers:nth-child(1)
+  margin-right: 15px;
+
+.elements__button
+  padding: 1.2% 5%;
+  border-radius: 5px;
+  border: 1px solid $borderGrey;
+
+.elements__button--active
+  background-color: $blue;
+  border-color: @background-color;
+  color: $white;
+
+.elements__button.elements__button--tab
+  border-radius: 5px 0 0 5px;
+  padding: .8% 3%;
+
+.elements__button.elements__button--active.elements__button--tab
+  border-radius: 0 5px 5px 0;
+
+.elements__select
+  width: 25%;
+
+.elements__button:nth-child(1)
+  margin-right: 15px;
+
+.elements__button:nth-child(2),.elements__button:nth-child(4)
+  margin-right: 20px;
+
+.elements__select
+  margin-right: 30px;
+  padding: 10px 15px;
+
+.elements__tooltip
+  display: flex;
+  align-items: center;
+
+.tooltip-square
+    width: 17px;
+    height: 17px;
+    background-color: $lightGrey;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;

@@ -14,23 +14,23 @@ html(lang="en")
       .wrapper__content
         header.header
           .header__wrap
-            .container
-              .header__left 
-                svg.header__logo 
-                  use(xlink:href='../images/icons/LogoType.svg#Page-1')
-              nav.nav   
-                - var items = ['Menu 1', 'Menu 2', 'Menu 3'];
-                ul.nav__list
-                  each item in items 
-                    li.nav__item  
-                      a.nav__link(href="#")
-                        span.nav__name #{item}
-                        svg.nav__arrow-down
-                          use(xlink:href='../images/icons/arrow_down.svg#Page-1')
+            .container.header__container
+              .header__left
+                .header__logo
+                  img(src='../images/pictures/logo.png')
+                nav.nav
+                  - var items = ['Menu 1', 'Menu 2', 'Menu 3'];
+                  ul.nav__list
+                    each item in items 
+                      li.nav__item  
+                        a.nav__link(href="#")
+                          span.nav__name #{item}
+                          .nav__arrow-down
+                            img(src='../images/pictures/arrow__down.png')
               .header__right 
-              a(href="#").bascket 
-                svg.bascket__icon
-                  use(xlink:href='../images/icons/cart-test.svg#Page-1')
+                a(href="#").bascket 
+                  svg.bascket__icon
+                    use(xlink:href='../images/icons/cart-test.svg#Page-1')
           .header__border 
         main.main   
           .container
@@ -45,19 +45,20 @@ html(lang="en")
             section.main__content 
               .container-text
                 h1.main__title I Left The “Grand Old Party”
-                h2.main__subtitle Producers
+                h2.main__subtitle for Producers
                 .main__text
                   p Last night, the unimaginable happened. Donald Trump became the presumptive Republican nominee with his win in Indiana. His remaining rivals for the nomination, Ted Cruz and John Kasich, have bowed out of the race, and the RNC is now treating him as the winner. Which means it’s time for me to be a man and stick with my promise from back in August and March. It’s time for this Republican to leave the party.
                   p I explained in greater length back in March how I ended up a Republican in the first place. I have been a member of the Grand Old Party since I was in seventh grade. But now almost two decades later, I find myself no longer being able to convince myself to stay in it
                     ul  
-                      li 	⁃	The Republican Party I joined promoted fiscal responsibility, strong foreign policy abroad, and individual  		liberty. The party that I’ve seen of late is one that is none of that.
-                      li 	⁃	The Republican Party fought against slavery under Lincoln and fought the KKK under Grant. Now, it 		nominates a man who hesitates when confronted with support from the KKK and has manually re-tweeted 		racist and anti-Semitic accounts.
+                      li 	The Republican Party I joined promoted fiscal responsibility, strong foreign policy aoad, and individual  		liberty. The party that I’ve seen of late is one that is none of that.
+                      li 	The Republican Party fought against slavery under Lincoln and fought the KKK under Grant. Now, it 		nominates a man who hesitates when confronted with support from the KKK and has manually re-tweeted 		racist and anti-Semitic accounts.
                   p I explained in greater length back in March how I ended up a Republican in the first place. I have been a member of the Grand Old Party since I was in seventh grade. But now almost two decades later, I find myself no longer being able to convince myself to stay in it
                     ol 
-                      li 	1.	The Republican Party fought against slavery under Lincoln and fought the KKK under Grant. Now, it 		nominates a man who hesitates when confronted with support from the KKK and has manually re-tweeted 		racist and anti-Semitic accounts.
-                      li 	2.	The Republican Party fought for the women’s vote during the 1920 Presidential election. Now, it nominates a 		man who refers to them in obscene matters and cheats on them regularly.
+                      li 	The Republican Party fought against slavery under Lincoln and fought the KKK under Grant. Now, it 		nominates a man who hesitates when confronted with support from the KKK and has manually re-tweeted 		racist and anti-Semitic accounts.
+                      li 	The Republican Party fought for the women’s vote during the 1920 Presidential election. Now, it nominates a 		man who refers to them in obscene matters and cheats on them regularly.
                   p I explained in greater length back in March how I ended up a Republican in the first place. I have been a member of the Grand Old Party since I was in seventh grade. But now almost two decades later, I find myself no longer being able to convince myself to stay in it
-                    a(href="https://www.hotnewhiphop.com/download-24hrs-new-dj-drama-hosted-mixtape-12-am-in-atlanta-new-mixtape.117497.html") https://www.hotnewhiphop.com/download-24hrs-new-dj-drama-hosted-mixtape-12-am-in-atlanta-new-mixtape.117497.html
+                    p
+                      a(href="https://www.hotnewhiphop.com/download-24hrs-new-dj-drama-hosted-mixtape-12-am-in-atlanta-new-mixtape.117497.html") https://www.hotnewhiphop.com/download-24hrs-new-dj-drama-hosted-mixtape-12-am-in-atlanta-new-mixtape.117497.html
                   p explained in greater length back in March how I ended up a Republican in the first place. I have been a member of the Grand Old Party since I was in seventh grade. But now almost two decades later, I find myself no longer being able to convince myself to stay in it
                 h2.main__subtitle for Producers
                 h4.subtitle__small No fees from beat sale
@@ -75,20 +76,23 @@ html(lang="en")
                       th Column 4
                   tbody   
                     tr 
-                      td something
-                      td something
-                      td something
-                      td something
+                      td Something
+                      td Something
+                      td Something
+                      td Something
                     tr 
-                      td something
-                      td something
-                      td something
-                      td something something something
+                      td Something
+                      td Something
+                      td Something
+                      td
+                        div Something
+                        div Something
+                        div Something
                     tr 
-                      td something
-                      td something
-                      td something
-                      td something
+                      td Something
+                      td Something
+                      td Something
+                      td Something
             section.listing
               .listing__header 
                 .listing__title 
@@ -104,173 +108,205 @@ html(lang="en")
               ul.listing__list 
                 li.listing__item 
                   .listing__pic
-                    img(src='../images/pictures/listing-pic.png').listing__img
+                    img(src='../images/pictures/listing/1.jpg').listing__img
                     .listing__time 0:17
                   .listing__title-card Game of Thrones, S03E01
                   .listing__subtitle-card by Norman Jefferson
                   .listing__text-card end up
                 li.listing__item 
                   .listing__pic
-                    img(src='../images/pictures/listing-pic.png').listing__img
+                    img(src='../images/pictures/listing/2.jpg').listing__img
                     .listing__time 0:17
                   .listing__title-card Game of Thrones, S03E01
                   .listing__subtitle-card by Norman Jefferson
                   .listing__text-card end up
                 li.listing__item 
                   .listing__pic
-                    img(src='../images/pictures/listing-pic.png').listing__img
+                    img(src='../images/pictures/listing/3.jpg').listing__img
                     .listing__time 0:17
                   .listing__title-card Game of Thrones, S03E01
                   .listing__subtitle-card by Norman Jefferson
                   .listing__text-card end up
                 li.listing__item 
                   .listing__pic
-                    img(src='../images/pictures/listing-pic.png').listing__img
+                    img(src='../images/pictures/listing/4.jpg').listing__img
                     .listing__time 0:17
                   .listing__title-card Game of Thrones, S03E01
                   .listing__subtitle-card by Norman Jefferson
                   .listing__text-card end up
                 li.listing__item 
                   .listing__pic
-                    img(src='../images/pictures/listing-pic.png').listing__img
+                    img(src='../images/pictures/listing/5.jpg').listing__img
                     .listing__time 0:17
                   .listing__title-card Game of Thrones, S03E01
                   .listing__subtitle-card by Norman Jefferson
                   .listing__text-card end up
                 li.listing__item 
                   .listing__pic
-                    img(src='../images/pictures/listing-pic.png').listing__img
+                    img(src='../images/pictures/listing/6.jpg').listing__img
                     .listing__time 0:17
                   .listing__title-card Game of Thrones, S03E01
                   .listing__subtitle-card by Norman Jefferson
                   .listing__text-card end up
                 li.listing__item 
                   .listing__pic
-                    img(src='../images/pictures/listing-pic.png').listing__img
+                    img(src='../images/pictures/listing/7.jpg').listing__img
                     .listing__time 0:17
                   .listing__title-card Game of Thrones, S03E01
                   .listing__subtitle-card by Norman Jefferson
                   .listing__text-card end up
                 li.listing__item 
                   .listing__pic
-                    img(src='../images/pictures/listing-pic.png').listing__img
+                    img(src='../images/pictures/listing/8.jpg').listing__img
                     .listing__time 0:17
                   .listing__title-card Game of Thrones, S03E01
                   .listing__subtitle-card by Norman Jefferson
                   .listing__text-card end up
                 li.listing__item 
                   .listing__pic
-                    img(src='../images/pictures/listing-pic.png').listing__img
+                    img(src='../images/pictures/listing/9.jpg').listing__img
                     .listing__time 0:17
                   .listing__title-card Game of Thrones, S03E01
                   .listing__subtitle-card by Norman Jefferson
                   .listing__text-card end up
                 li.listing__item 
                   .listing__pic
-                    img(src='../images/pictures/listing-pic.png').listing__img
+                    img(src='../images/pictures/listing/1.jpg').listing__img
                     .listing__time 0:17
                   .listing__title-card Game of Thrones, S03E01
                   .listing__subtitle-card by Norman Jefferson
                   .listing__text-card end up
                 li.listing__item 
                   .listing__pic
-                    img(src='../images/pictures/listing-pic.png').listing__img
+                    img(src='../images/pictures/listing/2.jpg').listing__img
                     .listing__time 0:17
                   .listing__title-card Game of Thrones, S03E01
                   .listing__subtitle-card by Norman Jefferson
                   .listing__text-card end up
                 li.listing__item 
                   .listing__pic
-                    img(src='../images/pictures/listing-pic.png').listing__img
+                    img(src='../images/pictures/listing/3.jpg').listing__img
                     .listing__time 0:17
                   .listing__title-card Game of Thrones, S03E01
                   .listing__subtitle-card by Norman Jefferson
                   .listing__text-card end up
             section.setting   
               .gradient 
-                h3.gradient__title Gradient
+                h3.gradient__title.setting__title Gradient
                 .gradient__elem.gradient__elem--first
                 .gradient__elem.gradient__elem--second
-              .range 
+              .range
+                h3.range__title.setting__title range input 
                 .range__info 
-                  h3.range__title range input
                   .range__subtitle Title
-                input(type='range').range__input
-              .tabs   
-                h3.tabs__title Tabs
+                  //- input(type='range').range__input
+                  .container-range 
+                    input#range(type="range",value="35")
+                    label#value(for="range")
+              .tabs    
+                h3.tabs__title.setting__title Tabs
                 ul.tabs__name-list-name 
-                  li.tabs__name-item Active Tab
+                  li.tabs__name-item.tabs__name-item--active Active Tab
                   li.tabs__name-item Other Tab
                   li.tabs__name-item Active Tab 2
                 ul.tabs__list   
                   li.tabs__item
                     .tabs__pic
-                      img(src='../images/pictures/tabs-pic.png')
-                    .tabs__title Mixed Conditionals
+                      img(src='../images/pictures/Tabs/tabs-pic-1.png')
+                    .tabs__title-item Mixed Conditionals
                     .tabs__desc by Birdie Torres
+                  li.tabs__item
+                    .tabs__pic
+                      img(src='../images/pictures/Tabs/tabs-pic-2.png')
+                    .tabs__title-item Possibility and Certainty
+                    .tabs__desc by Birdie Torres
+                  li.tabs__item
+                    .tabs__pic
+                      img(src='../images/pictures/Tabs/tabs-pic-3.png')
+                    .tabs__title-item Possibility and Certainty
+                    .tabs__desc by Birdie Torres
+                  li.tabs__item
+                    .tabs__pic
+                      img(src='../images/pictures/Tabs/tabs-pic-4.png')
+                    .tabs__title-item Possibility and Certainty
+                    .tabs__desc by Birdie Torres
+                  li.tabs__item
+                    .tabs__pic
+                      img(src='../images/pictures/Tabs/tabs-pic-5.png')
+                    .tabs__title-item Questions with Auxiliary Verbs
+                    .tabs__desc by Aiden Leonard
+                  li.tabs__item
+                    .tabs__pic
+                      img(src='../images/pictures/Tabs/tabs-pic-2.png')
+                    .tabs__title-item Suggestions and Advice, Criticism and Regret
+                    .tabs__desc by Aiden Leonard
               .elements   
-                h3.elements__title Elements 
+                h3.elements__title.setting__title Elements 
                 .elements__controllers
                   button.elements__button.elements__button--active Button
                   button.elements__button Button
-                  button.elements__button.elements__button--active On
-                  button.elements__button Off 
-                  select.elements__select
-                    option 1
-                    option 2
-                    option 3
+                  button.elements__button.elements__button--tab On
+                  button.elements__button.elements__button--active.elements__button--tab Off 
+                  select.elements__select Choose Something
+                    option#custom-select-placeholder Choose Something
+                    option Something
+                    option Something
+                    option Something
+                    option Something
+                    option Something
+                    option Something
                   .elements__tooltip 
                     .tooltip-name Tooltip
-                    .tooltip-square
+                    input(type="color",value="#8392a6").tooltip-square
             section.feedback 
-            form.form(action="#")
-              .form__info Your email address will not be published. Required fields are marked
-                snan *
-              .form__rating 
-                .form__subtitle Your rating
-                .form__rating-stars 
-                  .star-rating 
-                    .star-rating__wrap
-                      input(type="radio",name="rating",value="5").star-rating__input#star-rating-5
-                      label(for="star-rating-5",title="5 out of 5 stars").star-rating__ico.fa.fa-star-o.fa-lg
-                      input(type="radio",name="rating",value="4").star-rating__input#star-rating-4
-                      label(for="star-rating-4",title="4 out of 5 stars").star-rating__ico.fa.fa-star-o.fa-lg
-                      input(type="radio",name="rating",value="3").star-rating__input#star-rating-3
-                      label(for="star-rating-3",title="3 out of 5 stars").star-rating__ico.fa.fa-star-o.fa-lg
-                      input(type="radio",name="rating",value="2").star-rating__input#star-rating-2
-                      label(for="star-rating-2",title="2 out of 5 stars").star-rating__ico.fa.fa-star-o.fa-lg
-                      input(type="radio",name="rating",value="1").star-rating__input#star-rating-1
-                      label(for="star-rating-1",title="1 out of 5 stars").star-rating__ico.fa.fa-star-o.fa-lg
-              .form__review 
-                .form__subtitle Your review 
-                  snan *
-                input.form__textarea(name="comment", placeholder="Your comment", Required) 
-              .form__inputs-col 
-                .form__inpust-row
-                  .form__subtitle Name 
-                    span *
-                  input.form__input-name(type="text", name="user name", placeholder="Your name", Required) 
-                .form__inpust-row
-                  .form__subtitle Email 
-                    span *
-                  input.form__input-name(type="email", name="user email" placeholder="Your email address", Required) 
-              .form__inputs-col 
-                label.form__check() 
-                  input(type="checkbox", name="Notify user by email.").form__checkbox
-                  .form__check-visible
-                  .form__checkbox-info Notify me of new posts by email.                
-              .form__btn
-                button.form__sibmit#send-form(type='submit') Submit
-            .widget
-              .widget__first 
-                img(src='../images/pictures/Placeholder-first-widget.png')
-              .widget__second
-                img(src='../images/pictures/Placeholder-second-widget.png') 
+              form.form(action="#")
+                .form__info Your email address will not be published. Required fields are marked
+                  snan.span-red *
+                .form__rating 
+                  .form__subtitle Your rating
+                  .form__rating-stars 
+                    .star-rating 
+                      .star-rating__wrap
+                        input(type="radio",name="rating",value="5").star-rating__input#star-rating-5
+                        label(for="star-rating-5",title="5 out of 5 stars").star-rating__ico.fa.fa-star-o.fa-lg
+                        input(type="radio",name="rating",value="4").star-rating__input#star-rating-4
+                        label(for="star-rating-4",title="4 out of 5 stars").star-rating__ico.fa.fa-star-o.fa-lg
+                        input(type="radio",name="rating",value="3").star-rating__input#star-rating-3
+                        label(for="star-rating-3",title="3 out of 5 stars").star-rating__ico.fa.fa-star-o.fa-lg
+                        input(type="radio",name="rating",value="2").star-rating__input#star-rating-2
+                        label(for="star-rating-2",title="2 out of 5 stars").star-rating__ico.fa.fa-star-o.fa-lg
+                        input(type="radio",name="rating",value="1").star-rating__input#star-rating-1
+                        label(for="star-rating-1",title="1 out of 5 stars").star-rating__ico.fa.fa-star-o.fa-lg
+                .form__review 
+                  .form__subtitle Your review 
+                    snan.span-red *
+                  textarea.form__textarea(name="comment", placeholder="Your comment", Required) 
+                .form__inputs-col 
+                  .form__inpust-row
+                    .form__subtitle Name 
+                      span.span-red *
+                    input.form__input-name(type="text", name="user name", placeholder="Your name", Required) 
+                  .form__inpust-row
+                    .form__subtitle Email 
+                      span.span-red *
+                    input.form__input-name(type="email", name="user email" placeholder="Your email address", Required) 
+                .form__inputs-col 
+                  label.form__check
+                    input(type="checkbox", name="Notify user by email.", checked).form__checkbox
+                    .check__visible
+                    .form__checkbox-info Notify me of new posts by email. 
+                .form__btn
+                  button.form__submit#send-form(type='submit') Submit
+              .widget
+                .widget__first 
+                  img(src='../images/pictures/Placeholder-first-widget.png')
+                .widget__second
+                  img(src='../images/pictures/Placeholder-second-widget.png') 
         footer.footer
-        .container
           .click-to-top
             svg.arrow-top
               use(xlink:href='../images/icons/arrow_left.svg#Page-1')
+          .container.footer__container
             .footer__info 
               .footer__desc While it was just a TV show, that little speech at the beginning of the original Star Trek show really did do a good job of capturing our feelings about space. It is those feelings that drive our love of astronomy  and our desire to learn more and more about it. 
               span Test TRK © 2017
@@ -278,35 +314,31 @@ html(lang="en")
               .footer__title Terms & Conditions
               a.footer__link#privacyPolicy(href="#") Privacy Policy
                 .footer__popup.popup
-                  .popup__headr 
-                    .popup__titile 
+                  .popup__header 
+                    .popup__titile Data Policy
                     .popup__close 
                   .popop__body
-                  p What information do we collect?
-                  p We may gather and process the following information about you when you use the Hogarth LMS:
-                  ol 
-                    li Name
-                    li Email address
-                    li Company name
-                    li Activity log (actions performed in the LMS)
-                    li LMS module access and completion data
-                  p How do we use it? 
-                    br We will use your personal information in the following ways. We are also required by law to state a “legal basis for processing”, i.e. to tell you on what grounds we are allowed to use your information, and this is also set out below:
-                  ol 
-                    li We will use your personal information to provide secure access to the LMS.
-                      br Our legal basis for processing: performance as specified under contract agreement – we use your personal information to help us to deliver the best possible learning experience
-                    li We will use your personal information to track progress.
-                      br Our legal basis for processing: performance as specified under contract agreement – we maintain a record of your progress through training modules to optimise the learning experience 
-                    li We will use your personal information to track progress.
-                      br Our legal basis for processing: performance as specified under contract agreement – we maintain a record of your progress through training modules to optimise the learning experience 
+                    p What information do we collect?
+                    p We may gather and process the following information about you when you use the Hogarth LMS:
+                    ol 
+                      li Name
+                      li Email address
+                      li Company name
+                      li Activity log (actions performed in the LMS)
+                      li LMS module access and completion data
+                    p How do we use it? We will use your personal information in the following ways. We are also required by law to state a “legal basis for processing”, i.e. to tell you on what grounds we are allowed to use your information, and this is also set out below:
+                    ol 
+                      li We will use your personal information to provide secure access to the LMS. Our legal basis for processing: performance as specified under contract agreement – we use your personal information to help us to deliver the best possible learning experience
+                      li We will use your personal information to track progress. Our legal basis for processing: performance as specified under contract agreement – we maintain a record of your progress through training modules to optimise the learning experience 
+                      li We will use your personal information to track progress. Our legal basis for processing: performance as specified under contract agreement – we maintain a record of your progress through training modules to optimise the learning experience 
               a.footer__link(href="#") Terms of Payment
               a.footer__link(href="#") Terms of Service
             .footer__contacts 
-              .footer__title
+              .footer__title Contact Support
               a.footer__link(href="mailto:jermey.kling@yahoo.com") jermey.kling@yahoo.com
-              a.footer__btn(href="#") Leave feedback 
+              .footer__btn(href="#") Leave feedback 
             .footer__follow.follow
-              .follow__title.footer__title
+              .follow__title.footer__title Follow
               ul.follow__list 
                 li.follow__item 
                   a.follow__links(href="#")  
@@ -320,6 +352,8 @@ html(lang="en")
                   a.follow__links(href="#")  
                     svg.follow__icon
                       use(xlink:href='../images/icons/twitter.svg#Page-1')
+    script(src="./js/main.js")
+    script(src="./js/custom-range.js") 
 //- svg.
       use(xlink:href='../images/icons/.svg#Page-1')
 //-  img(src='../images/pictures/main-banner.png')
