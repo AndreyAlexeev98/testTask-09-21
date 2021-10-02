@@ -34,14 +34,20 @@ html(lang="en")
           .header__border 
         main.main   
           .container
-            section.main__slider 
-              img(src='../images/pictures/main-banner.png')
-              .arrow-slider.arrow-left 
-                svg.arrow-left-icon
-                  use(xlink:href='../images/icons/arrow_left.svg#Page-1')
-              .arrow-slider.arrow-right  
-                svg.arrow-right-icon
-                  use(xlink:href='../images/icons/arrow_left.svg#Page-1')
+            section.slider 
+              .slider__list 
+                .slider__item
+                  img(src='../images/pictures/banner/main-banner-3-min.jpg')
+                .slider__item 
+                  img(src='../images/pictures/banner/main-banner-2-min.jpg')
+                .slider__item 
+                  img(src='../images/pictures/banner/main-banner-1-min.jpg')
+              //- .arrow-slider.arrow-left 
+              //-   svg.arrow-left-icon
+              //-     use(xlink:href='../images/icons/arrow_left.svg#Page-1')
+              //- .arrow-slider.arrow-right  
+              //-   svg.arrow-right-icon
+              //-     use(xlink:href='../images/icons/arrow_left.svg#Page-1')
             section.main__content 
               .container-text
                 h1.main__title I Left The “Grand Old Party”
@@ -98,98 +104,177 @@ html(lang="en")
                 .listing__title 
                   span.listing__title-name Listing 
                   span.listin__title-value (32 043)
-                .listing__arrows  
-                  .arrow__left.arrow__left--listing
-                    svg.arrow__left-icon
-                      use(xlink:href='../images/icons/arrow_left.svg#Page-1')
-                  .arrow__right.arrow__right--listing
-                    svg.arrow__right-icon
-                      use(xlink:href='../images/icons/arrow_left.svg#Page-1')
-              ul.listing__list 
-                li.listing__item 
-                  .listing__pic
-                    img(src='../images/pictures/listing/1.jpg').listing__img
-                    .listing__time 0:17
-                  .listing__title-card Game of Thrones, S03E01
-                  .listing__subtitle-card by Norman Jefferson
-                  .listing__text-card end up
-                li.listing__item 
-                  .listing__pic
-                    img(src='../images/pictures/listing/2.jpg').listing__img
-                    .listing__time 0:17
-                  .listing__title-card Game of Thrones, S03E01
-                  .listing__subtitle-card by Norman Jefferson
-                  .listing__text-card end up
-                li.listing__item 
-                  .listing__pic
-                    img(src='../images/pictures/listing/3.jpg').listing__img
-                    .listing__time 0:17
-                  .listing__title-card Game of Thrones, S03E01
-                  .listing__subtitle-card by Norman Jefferson
-                  .listing__text-card end up
-                li.listing__item 
-                  .listing__pic
-                    img(src='../images/pictures/listing/4.jpg').listing__img
-                    .listing__time 0:17
-                  .listing__title-card Game of Thrones, S03E01
-                  .listing__subtitle-card by Norman Jefferson
-                  .listing__text-card end up
-                li.listing__item 
-                  .listing__pic
-                    img(src='../images/pictures/listing/5.jpg').listing__img
-                    .listing__time 0:17
-                  .listing__title-card Game of Thrones, S03E01
-                  .listing__subtitle-card by Norman Jefferson
-                  .listing__text-card end up
-                li.listing__item 
-                  .listing__pic
-                    img(src='../images/pictures/listing/6.jpg').listing__img
-                    .listing__time 0:17
-                  .listing__title-card Game of Thrones, S03E01
-                  .listing__subtitle-card by Norman Jefferson
-                  .listing__text-card end up
-                li.listing__item 
-                  .listing__pic
-                    img(src='../images/pictures/listing/7.jpg').listing__img
-                    .listing__time 0:17
-                  .listing__title-card Game of Thrones, S03E01
-                  .listing__subtitle-card by Norman Jefferson
-                  .listing__text-card end up
-                li.listing__item 
-                  .listing__pic
-                    img(src='../images/pictures/listing/8.jpg').listing__img
-                    .listing__time 0:17
-                  .listing__title-card Game of Thrones, S03E01
-                  .listing__subtitle-card by Norman Jefferson
-                  .listing__text-card end up
-                li.listing__item 
-                  .listing__pic
-                    img(src='../images/pictures/listing/9.jpg').listing__img
-                    .listing__time 0:17
-                  .listing__title-card Game of Thrones, S03E01
-                  .listing__subtitle-card by Norman Jefferson
-                  .listing__text-card end up
-                li.listing__item 
-                  .listing__pic
-                    img(src='../images/pictures/listing/1.jpg').listing__img
-                    .listing__time 0:17
-                  .listing__title-card Game of Thrones, S03E01
-                  .listing__subtitle-card by Norman Jefferson
-                  .listing__text-card end up
-                li.listing__item 
-                  .listing__pic
-                    img(src='../images/pictures/listing/2.jpg').listing__img
-                    .listing__time 0:17
-                  .listing__title-card Game of Thrones, S03E01
-                  .listing__subtitle-card by Norman Jefferson
-                  .listing__text-card end up
-                li.listing__item 
-                  .listing__pic
-                    img(src='../images/pictures/listing/3.jpg').listing__img
-                    .listing__time 0:17
-                  .listing__title-card Game of Thrones, S03E01
-                  .listing__subtitle-card by Norman Jefferson
-                  .listing__text-card end up
+              .listing__body
+                ul.listing__list 
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/1.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/2.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/3.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/4.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/5.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/6.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/7.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/8.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/9.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/1.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/2.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/3.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                ul.listing__list 
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/1.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/2.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/3.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/4.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/5.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/6.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/7.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/8.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/9.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/1.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/2.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
+                  li.listing__item 
+                    .listing__pic
+                      img(src='../images/pictures/listing/3.jpg').listing__img
+                      .listing__time 0:17
+                    .listing__title-card Game of Thrones, S03E01
+                    .listing__subtitle-card by Norman Jefferson
+                    .listing__text-card end up
             section.setting   
               .gradient 
                 h3.gradient__title.setting__title Gradient
@@ -352,8 +437,14 @@ html(lang="en")
                   a.follow__links(href="#")  
                     svg.follow__icon
                       use(xlink:href='../images/icons/twitter.svg#Page-1')
-    script(src="./js/main.js")
-    script(src="./js/custom-range.js") 
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js", integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=", crossorigin="anonymous")
+    script(src="./js/slick.min.js")
+    script(src="./js/slick-settings.js")
+    script(src="./js/custom-range.js")
+    script(src="./js/main.min.js")
+    
+    
+
 //- svg.
       use(xlink:href='../images/icons/.svg#Page-1')
 //-  img(src='../images/pictures/main-banner.png')

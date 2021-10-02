@@ -1,16 +1,106 @@
 @import "../layout/variables.styl"
 
-.main__slider
+.slider
     position: relative;
     margin-bottom: 45px;
+    overflow: hidden;
 
-.arrow-slider
-    position: absolute;
-    top: 39%;
-    width: 42px;
+.slider__list {
+    position: relative;
+}
+
+.slider__item {
+    max-height: 431px;
+}
+
+.slider__btn 
+    width: 85px;
     height: 85px;
-    cursor: pointer;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    transform: translateY(-50%)
 
-.arrow-right
-    right: 0;
-    transform: rotate(180deg);
+    
+
+.slider__btn--left
+    left: -45px
+
+.slider__btn--right
+    right: -45px
+
+.slider__arrow 
+    position: absolute;
+    top: 50%
+    left: 50%
+    transform: translatey(-50%);
+    
+.slider__arrow--left
+.slider__arrow--right
+    width 15px
+    height: 25px
+
+.slider__arrow--left
+    margin-left: 5px
+
+.slider__arrow--right
+    margin-left: -15px;
+
+.slider__arrow--left:before
+.slider__arrow--right:before
+.slider__arrow--left:after
+.slider__arrow--right:after
+    content: ''
+    width: 30px
+    height: 7px
+    display: block;
+    position: absolute;
+    background-color: $lightGrey;
+    border-radius: 0 30px 30px 0;
+
+.slider__arrow--right:before
+.slider__arrow--right:after
+    background-color: $blue;
+
+.slider__arrow--left:before
+    transform: rotate(-45deg)
+    top: 0
+
+.slider__arrow--left:after
+    transform: rotate(45deg)
+    top: 70%
+    
+
+.slider__arrow--right:before
+    transform: rotate(45deg)
+    top: 0
+    right 25%
+    border-radius: 30px 0 0 30px;
+
+.slider__arrow--right:after
+    transform: rotate(-45deg)
+    top: 70%
+    right 25%
+    border-radius: 30px 0 0 30px;
+
+    
+
+// button.slick-prev.slick-arrow
+//     z-index: 1;
+//     width: 85px;
+//     height: 85px;
+//     background-color: rgba(255,255,255,0.4);
+//     border-radius: 50%;
+
+// .arrow-slider
+//     position: absolute;
+//     top: 39%;
+//     width: 42px;
+//     height: 85px;
+//     cursor: pointer;
+
+// .arrow-right
+//     right: 0;
+//     transform: rotate(180deg);

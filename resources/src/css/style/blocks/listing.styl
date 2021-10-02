@@ -23,6 +23,9 @@
     align-items: center;
     margin-bottom: 20px;
 
+.listing__body
+    position relative 
+
 .arrow__left--listing,.arrow__right--listing
     width: 29px;
     height: 83px;
@@ -33,7 +36,7 @@
     transform: rotate(180deg);
 
 .listing__list
-    display: grid;
+    display: grid !important;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
 
@@ -54,4 +57,27 @@
     color: #fff;
     padding: 3px 5px;
     border-radius: 5px;
+
+.slider__arrow--right
+.slider__arrow--listing {
+    position: absolute;
+    top: -47px;
+    left: 96%;
+    cursor: pointer
+}
+
+.slider__arrow--right.slider__arrow--listing
+    left: 100%
+
+.slider__arrow--listing.slider__arrow--left:after 
+.slider__arrow--listing.slider__arrow--left:before
+.slider__arrow--listing.slider__arrow--right:after 
+.slider__arrow--listing.slider__arrow--right:before
+    width: 12px;
+    height: 4px;
+
+.slider__arrow--listing.slider__arrow--left:before
+.slider__arrow--listing.slider__arrow--right:before
+    top: 11px
+
 

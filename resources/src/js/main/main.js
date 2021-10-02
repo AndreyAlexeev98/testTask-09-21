@@ -6,3 +6,7 @@ privacyBtn.addEventListener('click', function hidden(e) {
   e.preventDefault();
   popup.classList.toggle('no-visible');
 });
+
+
+console.log('aaaaaaaaaaaa')
+console.log('bbbbbbbbb')

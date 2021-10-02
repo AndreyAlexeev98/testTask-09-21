@@ -47,7 +47,7 @@ gulp.task('minify-css', function() {
 
 gulp.task('concat-js', function() {
     return gulp.src([
-        src+'/js/main.js',
+        src+'/js/*.js',
         
     ])
         .pipe(concat('main.js'))
