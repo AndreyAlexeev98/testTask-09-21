@@ -18,10 +18,13 @@
 .tabs__name-item:last-child
   margin-right: 0;
 
-.tabs__name-item--active
+.tabs__name-item.is-active
   color: $blue;
 
 .tabs__list 
+  display: none;
+
+.tabs__list.is-active
   display: flex;
 
 .tabs__item:not(:last-child)
@@ -34,4 +37,3 @@
 .tabs__desc
   font-weight: 400;
   font-size: 14px;
-  

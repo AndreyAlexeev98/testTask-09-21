@@ -291,40 +291,103 @@ html(lang="en")
               .tabs    
                 h3.tabs__title.setting__title Tabs
                 ul.tabs__name-list-name 
-                  li.tabs__name-item.tabs__name-item--active Active Tab
-                  li.tabs__name-item Other Tab
-                  li.tabs__name-item Active Tab 2
-                ul.tabs__list   
-                  li.tabs__item
-                    .tabs__pic
-                      img(src='../images/pictures/Tabs/tabs-pic-1.png')
-                    .tabs__title-item Mixed Conditionals
-                    .tabs__desc by Birdie Torres
-                  li.tabs__item
-                    .tabs__pic
-                      img(src='../images/pictures/Tabs/tabs-pic-2.png')
-                    .tabs__title-item Possibility and Certainty
-                    .tabs__desc by Birdie Torres
-                  li.tabs__item
-                    .tabs__pic
-                      img(src='../images/pictures/Tabs/tabs-pic-3.png')
-                    .tabs__title-item Possibility and Certainty
-                    .tabs__desc by Birdie Torres
-                  li.tabs__item
-                    .tabs__pic
-                      img(src='../images/pictures/Tabs/tabs-pic-4.png')
-                    .tabs__title-item Possibility and Certainty
-                    .tabs__desc by Birdie Torres
-                  li.tabs__item
-                    .tabs__pic
-                      img(src='../images/pictures/Tabs/tabs-pic-5.png')
-                    .tabs__title-item Questions with Auxiliary Verbs
-                    .tabs__desc by Aiden Leonard
-                  li.tabs__item
-                    .tabs__pic
-                      img(src='../images/pictures/Tabs/tabs-pic-2.png')
-                    .tabs__title-item Suggestions and Advice, Criticism and Regret
-                    .tabs__desc by Aiden Leonard
+                  li(data-tab-name="tab-1").tabs__name-item.is-active Active Tab
+                  li(data-tab-name="tab-2").tabs__name-item Other Tab
+                  li(data-tab-name="tab-3").tabs__name-item Active Tab 2
+                .tabs__content
+                  ul.tabs__list.is-active.tab.tab-1   
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-1.png')
+                      .tabs__title-item Mixed Conditionals
+                      .tabs__desc by Birdie Torres
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-2.png')
+                      .tabs__title-item Possibility and Certainty
+                      .tabs__desc by Birdie Torres
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-3.png')
+                      .tabs__title-item Possibility and Certainty
+                      .tabs__desc by Birdie Torres
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-4.png')
+                      .tabs__title-item Possibility and Certainty
+                      .tabs__desc by Birdie Torres
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-5.png')
+                      .tabs__title-item Questions with Auxiliary Verbs
+                      .tabs__desc by Aiden Leonard
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-2.png')
+                      .tabs__title-item Suggestions and Advice, Criticism and Regret
+                      .tabs__desc by Aiden Leonard
+                  ul.tabs__list.tab.tab-2   
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-4.png')
+                      .tabs__title-item Lorem Ispum
+                      .tabs__desc by Birdie Torres
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-1.png')
+                      .tabs__title-item Possibility and Certainty
+                      .tabs__desc by Birdie Torres
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-5.png')
+                      .tabs__title-item Lorem Ispum
+                      .tabs__desc by Birdie Torres
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-3.png')
+                      .tabs__title-item Possibility and Certainty
+                      .tabs__desc Lorem Ispum
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-2.png')
+                      .tabs__title-item Questions with Auxiliary Verbs
+                      .tabs__desc by Aiden Leonard
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-3.png')
+                      .tabs__title-item Suggestions and Advice, Criticism and Regret
+                      .tabs__desc by Aiden Leonard
+                  ul.tabs__list.tab.tab-3   
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-3.png')
+                      .tabs__title-item Lorem Ispum
+                      .tabs__desc by Birdie Torres
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-5.png')
+                      .tabs__title-item Possibility and Certainty
+                      .tabs__desc Lorem Ispum
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-1.png')
+                      .tabs__title-item Possibility and Certainty
+                      .tabs__desc by Birdie Torres
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-2.png')
+                      .tabs__title-item Lorem Ispum
+                      .tabs__desc by Birdie Torres
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-3.png')
+                      .tabs__title-item Questions with Auxiliary Verbs
+                      .tabs__desc by Aiden Leonard
+                    li.tabs__item
+                      .tabs__pic
+                        img(src='../images/pictures/Tabs/tabs-pic-1.png')
+                      .tabs__title-item Suggestions and Advice, Criticism and Regret
+                      .tabs__desc by Aiden Leonard
               .elements   
                 h3.elements__title.setting__title Elements 
                 .elements__controllers
@@ -438,13 +501,4 @@ html(lang="en")
                     svg.follow__icon
                       use(xlink:href='../images/icons/twitter.svg#Page-1')
     script(src="https://code.jquery.com/jquery-3.6.0.min.js", integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=", crossorigin="anonymous")
-    script(src="./js/slick.min.js")
-    script(src="./js/slick-settings.js")
-    script(src="./js/custom-range.js")
-    script(src="./js/main.min.js")
-    
-    
-
-//- svg.
-      use(xlink:href='../images/icons/.svg#Page-1')
-//-  img(src='../images/pictures/main-banner.png')
+    script(src="./js/main.min.js")    
