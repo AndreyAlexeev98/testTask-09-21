@@ -1,0 +1,127 @@
+@import "../layout/variables.styl"
+
+.catalog {
+  display: flex;
+}
+
+.catalog__nav.category {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.catalog__title {
+  text-transform: uppercase;
+  background-color: #F9FAFC;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  color: $grey;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.category__item > button 
+  color: $lightGrey;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+
+.category__item--active > button
+  color: $blue;
+
+.category__item:not(:last-child) {
+    margin-bottom: 20%;
+}
+
+.catalog__filter {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.catalog__filter > button
+  text-transform: uppercase;
+  color: $lightGrey;
+
+.catalog__sort.sort {
+  display: flex;
+  margin-right: 11%;
+}
+
+.sort__name {
+  margin-right: 17px;
+}
+
+.sort__value {
+  color: $grey;
+  position: relative;
+}
+
+.catalog__display {
+  display: flex;
+}
+
+.catalog__display-name {
+  margin-right: 13px;
+}
+
+.catalog__display-value {
+  color: $grey;
+  position: relative;
+}
+
+.catalog__switch-display {
+  display: flex;
+  margin-left: auto;
+}
+
+.catalog__switch-display-table {
+  margin-right: 16px;
+}
+
+.catalog__switch-display-table
+.catalog__switch-display-gallery
+  width: 28px;
+  height: 20px;
+  padding: 0;
+
+#catList
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+
+.catalog__pic {
+  width: 281px;
+  height: 189px;
+  margin-bottom: 10px;
+}
+
+.catalog__name {
+  font-weight: bold;
+  color: $grey;
+  margin-bottom: 5px;
+}
+
+.catalog__price {
+  color: #FF4949;
+}
+
+.catalog__btn {
+  background-color: $blue;
+  width: 100%;
+  color: #fff;
+  padding: 12px 0 15px 0;
+  border-radius: 6px;
+  margin-top: 18px;
+}
+
+.catalog__display-more-btn {
+    border: 1px solid #E3E9EF;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    padding: 13px 51px 16px 51px;
+    font-size: 18px;
+    font-weight: bold;
+    color: $lightGrey;
+    margin: 80px auto 0 auto;
+    display: block;
+}

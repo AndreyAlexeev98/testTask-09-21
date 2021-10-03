@@ -39,3 +39,14 @@ for (let smoothLink of smoothLinks) {
         });
     });
 };
+
+// logic switch in catalog list/grid 
+
+$('button').on('click',function(e) {
+  if ($(this).hasClass('grid')) {
+      $('#catList').removeClass('catalog__list').addClass('catalog__grid');
+  }
+  else if($(this).hasClass('list')) {
+      $('#catList').removeClass('catalog__grid').addClass('catalog__list');
+  }
+});

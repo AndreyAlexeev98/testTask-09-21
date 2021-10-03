@@ -1,7 +1,70 @@
 extends ./_layout/_main
 
 block title 
-  title Catalog page in index
+  title Catalog page
 
 block content 
-  h2 Catalog str
+  section.catalog
+    .catalog__nav.category
+      .category__title.catalog__title categories
+      - var items = ['category 1', 'category 2', 'category 3', 'category 4', 'category 5']
+        ul.category__list
+          each item in items 
+            li.category__item
+              button #{item}
+    .catalog__content 
+      .catalog__title title 
+      .catalog__filter
+        button.catalog__sort.sort 
+          .sort__name sort by
+          .sort__value position
+            .custom-arrow-down
+        button.catalog__display 
+          .catalog__display-name display
+          .catalog__display-value 6 per page
+            .custom-arrow-down
+        .catalog__switch-display
+          button.catalog__switch-display-table.list
+            svg
+              use(xlink:href='../images/icons/view-table.svg#Page-1')
+          button.catalog__switch-display-gallery.grid
+            svg
+              use(xlink:href='../images/icons/gallery.svg#Page-1')
+      ul#catList.catalog__grid
+        li.catalog__item
+          .catalog__pic
+            img(src='../images/pictures/catalog/1.jpg', alt="")
+          .catalog__name Customer Demo
+          .catalog__price $120.00
+          button.catalog__btn Add to Cart
+        li.catalog__item
+          .catalog__pic
+            img(src='../images/pictures/catalog/2.jpg', alt="")
+          .catalog__name Customer Demo
+          .catalog__price $120.00
+          button.catalog__btn Add to Cart
+        li.catalog__item
+          .catalog__pic
+            img(src='../images/pictures/catalog/3.jpg', alt="")
+          .catalog__name Customer Demo
+          .catalog__price $120.00
+          button.catalog__btn Add to Cart
+        li.catalog__item
+          .catalog__pic
+            img(src='../images/pictures/catalog/4.jpg', alt="")
+          .catalog__name Customer Demo
+          .catalog__price $120.00
+          button.catalog__btn Add to Cart
+        li.catalog__item
+          .catalog__pic
+            img(src='../images/pictures/catalog/5.jpg', alt="")
+          .catalog__name Customer Demo
+          .catalog__price $120.00
+          button.catalog__btn Add to Cart
+        li.catalog__item
+          .catalog__pic
+            img(src='../images/pictures/catalog/6.jpg', alt="")
+          .catalog__name Customer Demo
+          .catalog__price $120.00
+          button.catalog__btn Add to Cart
+      button.catalog__display-more-btn Load more
