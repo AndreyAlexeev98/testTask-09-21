@@ -19,14 +19,38 @@ html(lang="en")
                 .header__logo
                   img(src='../images/pictures/logo.png')
                 nav.nav
-                  - var items = ['Menu 1', 'Menu 2', 'Menu 3'];
+                  //- - var items = ['Menu 1', 'Menu 2', 'Menu 3'];
                   ul.nav__list
-                    each item in items 
-                      li.nav__item  
-                        a.nav__link(href="#")
-                          span.nav__name #{item}
-                          .nav__arrow-down
-                            img(src='../images/pictures/arrow__down.png')
+                    li.nav__item.nav__item--active 
+                      .nav__popup
+                        ul.nav__popup-list 
+                          li.nav__popup-item Submenu
+                          li.nav__popup-item Sssubmenu 1 
+                          li.nav__popup-item Submenu 
+                      a.nav__link(href="#")
+                        span.nav__name Menu 1
+                        .nav__arrow-down
+                          img(src='../images/pictures/arrow__down.png')
+                    li.nav__item.nav__item--open  
+                      .nav__popup
+                        ul.nav__popup-list 
+                          li.nav__popup-item Submenu
+                          li.nav__popup-item Sssubmenu 2 
+                          li.nav__popup-item Submenu
+                      a.nav__link(href="#")
+                        span.nav__name Menu 2
+                        .nav__arrow-down
+                          img(src='../images/pictures/arrow__down.png')
+                    li.nav__item  
+                      .nav__popup
+                        ul.nav__popup-list 
+                          li.nav__popup-item Submenu
+                          li.nav__popup-item Sssubmenu 3 
+                          li.nav__popup-item Submenu
+                      a.nav__link(href="#")
+                        span.nav__name Menu 3
+                        .nav__arrow-down
+                          img(src='../images/pictures/arrow__down.png')
               .header__right 
                 a(href="#").bascket 
                   svg.bascket__icon
@@ -42,12 +66,6 @@ html(lang="en")
                   img(src='../images/pictures/banner/main-banner-2-min.jpg')
                 .slider__item 
                   img(src='../images/pictures/banner/main-banner-1-min.jpg')
-              //- .arrow-slider.arrow-left 
-              //-   svg.arrow-left-icon
-              //-     use(xlink:href='../images/icons/arrow_left.svg#Page-1')
-              //- .arrow-slider.arrow-right  
-              //-   svg.arrow-right-icon
-              //-     use(xlink:href='../images/icons/arrow_left.svg#Page-1')
             section.main__content 
               .container-text
                 h1.main__title I Left The “Grand Old Party”
@@ -393,16 +411,35 @@ html(lang="en")
                 .elements__controllers
                   button.elements__button.elements__button--active Button
                   button.elements__button Button
-                  button.elements__button.elements__button--tab On
-                  button.elements__button.elements__button--active.elements__button--tab Off 
-                  select.elements__select Choose Something
-                    option#custom-select-placeholder Choose Something
-                    option Something
-                    option Something
-                    option Something
-                    option Something
-                    option Something
-                    option Something
+                  button#btnOn.elements__button.elements__button--tab.elements__button--left On
+                  button#btnOff.elements__button.elements__button--active.elements__button--tab.elements__button--right Off 
+                  
+
+
+                  .elements__select.select
+                    .select__header
+                      span.select__current Choose Something
+                      .select__icon
+                        img(src='../images/pictures/arrow__down.png')
+                    .select__body
+                      .select__item Something1
+                      .select__item Something2
+                      .select__item Something3
+                      .select__item Something4
+                      .select__item Something5
+                      .select__item Something6
+                  
+                  
+                  
+                  
+                  //- select.elements__select Choose Something
+                  //-   option#custom-select-placeholder Choose Something
+                  //-   option Something
+                  //-   option Something
+                  //-   option Something
+                  //-   option Something
+                  //-   option Something
+                  //-   option Something
                   .elements__tooltip 
                     .tooltip-name Tooltip
                     input(type="color",value="#8392a6").tooltip-square

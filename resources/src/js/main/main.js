@@ -33,7 +33,7 @@ range.addEventListener("input", () => {
   updateVar(range.value);
   updateValue(range.value);
 });
-// const closeBtn = document.querySelector('.composition__close');
+// logic close popup in footer
 const popup = document.querySelector('.popup');
 const privacyBtn = document.querySelector('#privacyPolicy');
 
@@ -42,6 +42,51 @@ privacyBtn.addEventListener('click', function hidden(e) {
   popup.classList.toggle('no-visible');
 });
 
+// logic switch btn - on/off
+const btnOn = document.querySelector('#btnOn');
+const btnOff = document.querySelector('#btnOff');
+
+   
+  btnOn.addEventListener('click', function hidden(e) {
+    e.preventDefault();
+    btnOn.classList.add('elements__button--active');
+    btnOff.classList.remove('elements__button--active');
+});
+
+  btnOff.addEventListener('click', function hidden(e) {
+    e.preventDefault();
+    btnOn.classList.remove('elements__button--active');
+    btnOff.classList.add('elements__button--active');
+  });
+let select = function () {
+  let selectHeader = document.querySelectorAll('.select__header');
+  let selectItem = document.querySelectorAll('.select__item');
+
+  selectHeader.forEach(item => {
+      item.addEventListener('click', selectToggle)
+  });
+
+  selectItem.forEach(item => {
+      item.addEventListener('click', selectChoose)
+  });
+
+  function selectToggle() {
+      this.parentElement.classList.toggle('is-active');
+  }
+
+  function selectChoose() {
+      let text = this.innerText,
+          select = this.closest('.select'),
+          currentText = select.querySelector('.select__current');
+      currentText.innerText = text;
+      select.classList.remove('is-active');
+
+  }
+
+};
+
+
+select();
 
 $(document).ready(function(){
 

@@ -1,0 +1,54 @@
+.select {
+  margin: 0 auto;
+  position: relative;
+  max-width: 320px;
+  width: 23vw;
+  color: #b8c1cc;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.select.is-active .select__body {
+	display: block;}
+
+.select__header {
+	cursor: pointer;
+	display: flex;
+}
+.select__current {
+	font-size: 18px;
+	line-height: 24px;
+	padding: 8px;
+  color: #3B4858;
+}
+.select__icon {
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	height: 7px;
+	margin: auto 15px auto auto;
+	text-align: center;
+	width: 11px;
+}
+
+.select__body {
+	border: 1px solid #cccccc;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 100%;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+.select__item {
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px;
+}
+
+.select__item:hover {
+	color: #3B4858;
+}
