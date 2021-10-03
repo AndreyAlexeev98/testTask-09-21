@@ -23,3 +23,19 @@ const btnOff = document.querySelector('#btnOff');
     btnOn.classList.remove('elements__button--active');
     btnOff.classList.add('elements__button--active');
   });
+
+
+// scrol for button click-to-top
+
+const smoothLinks = document.querySelectorAll('a[href^="#header"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};

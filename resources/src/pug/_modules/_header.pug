@@ -1,0 +1,47 @@
+header.header#header
+  .header__wrap
+    .container.header__container
+      .header__left
+        .header__logo
+          a(href="/index.html")
+            img(src='../../images/pictures/logo.png')
+        nav.nav
+          ul.nav__list
+            li.nav__item.nav__item--active 
+              .nav__popup
+                ul.nav__popup-list 
+                  li.nav__popup-item Main page
+                  li.nav__popup-item Mmmain page
+                  li.nav__popup-item Main page 
+              a.nav__link(href="#")
+                span.nav__name Main page
+                .nav__arrow-down
+                  img(src='../../images/pictures/arrow__down.png')
+            li.nav__item.nav__item--open  
+              .nav__popup
+                ul.nav__popup-list
+                  li.nav__popup-item 
+                    a(href="/catalog.html") Catalog
+                  li.nav__popup-item 
+                    a(href="/catalog.html") Cccatalog 2
+                  li.nav__popup-item 
+                    a(href="/catalog.html") Catalog
+              a.nav__link(href="/catalog.html")
+                span.nav__name Catalog
+                .nav__arrow-down
+                  img(src='../../images/pictures/arrow__down.png')
+            li.nav__item  
+              .nav__popup
+                ul.nav__popup-list 
+                  li.nav__popup-item Submenu
+                  li.nav__popup-item Sssubmenu 3 
+                  li.nav__popup-item Submenu
+              a.nav__link(href="#")
+                span.nav__name Menu 3
+                .nav__arrow-down
+                  img(src='../../images/pictures/arrow__down.png')
+      .header__right 
+        a(href="#").bascket 
+          svg.bascket__icon
+            use(xlink:href='../../images/icons/cart-test.svg#Page-1')
+  .header__border 
