@@ -6,15 +6,18 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="css/main.min.css")
-    title
-      block title
+    block title 
+      title Main Page
   body 
     .wrapper 
-      .wrapper__content
+      .wrapper__content 
+        
         include ../_modules/_header
-        main.main   
-          .container
+
+        main.main
+          .container 
             block content
+              
         include ../_modules/_footer
     script(src="https://code.jquery.com/jquery-3.6.0.min.js", integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=", crossorigin="anonymous")
     script(src="../../js/main.min.js")    
